@@ -55,6 +55,7 @@ h4 {
     background-color: var(--byellow);
     text-align: center;
     padding: 15px 0;
+    border-radius: 5px;
 }
 h5 {
     display: flex;
