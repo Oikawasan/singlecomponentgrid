@@ -14,10 +14,12 @@ body {
     background-color: var(--ltgray);
     padding: 75px 30px;
     font-family: 'Karla', sans-serif;
+    min-height: 100vh;
 }
 .box {
     border-radius: 8px;
     overflow: hidden;
+    box-shadow: 0 2px 15px rgb(0, 0, 0, 0.3);
 }
 .box>* {
     padding: 35px 25px;
@@ -56,6 +58,8 @@ h4 {
     text-align: center;
     padding: 15px 0;
     border-radius: 5px;
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.3);
+    
 }
 h5 {
     display: flex;
@@ -84,15 +88,31 @@ p {
     font-size: 14px;
 }
 @media only screen and (min-width: 1000px) {
+    .container {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
     .box {
         display: grid;
         max-width: 640px;
-        margin: auto;
     }
     .box > * {
         padding: 40px;
     }
     .community {
         grid-column: span 2;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .container {
+        padding: 50px 10vw;
+    }
+}
+@media only screen and (min-width: 700px) {
+    .container {
+        padding: 50px 22vw;
     }
 }
